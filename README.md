@@ -15,5 +15,5 @@ Features
 
 SCREENSHOTS
 
-<img src="https://user-images.githubusercontent.com/71425576/226541833-ebc41acc-86a8-4a0a-9ab2-8c22527b64a9.jpg" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/71425576/226541833-ebc41acc-86a8-4a0a-9ab2-8c22527b64a9.jpg" width="150" height="200">
 <img src="https://your-image-url.type" width="100" height="100">(https://user-images.githubusercontent.com/71425576/226542509-d11f57bd-829e-4da2-9992-e350bf25a6ca.jpg)
