@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_app"
+    android:layout_centerInParent="true"
+    tools:context=".activity.SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/doctorappicon" />
+
+        <com.example.mydesignapp.helper.CustomTextViewBold
+            android:id="@+id/tv_logo"
+            style="@style/white_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_logo"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/find_doctor"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>

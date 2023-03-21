@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_appointmentfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragment.AppointmentFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <com.example.mydesignapp.helper.CustomTextViewBold
+                style="@style/black_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_appointments"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_doctorappointmentmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_title"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <com.example.mydesignapp.helper.CustomTextViewBold
+                android:id="@+id/tv_upcoming"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_border"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/upcoming"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.example.mydesignapp.helper.CustomTextViewBold
+                android:id="@+id/tv_past"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_border"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/past"
+                android:textSize="@dimen/_12ssp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_upcomingAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lv_doctorappointmentmenu">
+
+            <!--            <androidx.recyclerview.widget.RecyclerView-->
+            <!--                android:id="@+id/rv_upcomingappointment"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"/>-->
+            <com.mlsdev.animatedrv.AnimatedRecyclerView
+                android:id="@+id/rv_upcomingappointment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:animationDuration="600"
+                app:layoutAnimation="@anim/layout_animation_from_bottom"
+                app:layoutManagerOrientation="vertical"
+                app:layoutManagerReverse="false"
+                app:layoutManagerType="linear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_pastappointment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lv_doctorappointmentmenu"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_pastappointment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

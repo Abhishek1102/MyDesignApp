@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="eye_specialities">Eye Specialities</string>
+    <string name="mental_health">Mental Health</string>
+    <string name="kidney_disease">Kidney Disease</string>
+    <string name="digestive_disease">Digestive Disease</string>
+    <string name="general_physician">General Physician</string>
+    <string name="ear_nose">Ear ,Nose</string>
+    <string name="review_question">We want to know about your experience \n with the doctor</string>
+    <string name="submit">Submit</string>
+    <string name="working_time">Working Time</string>
+    <string name="address">Address</string>
+</resources>

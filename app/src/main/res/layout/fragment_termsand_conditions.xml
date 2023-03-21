@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    tools:context=".fragment.TermsandConditionsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/iv_termsandconditionsBack"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow" />
+
+            <com.example.mydesignapp.helper.CustomTextViewBold
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iv_termsandconditionsBack"
+                android:text="Terms and Conditions"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_button"
+            android:layout_below="@+id/rl_top"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                    android:id="@+id/tv_title"
+                    style="@style/black_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/general_site_usage" />
+
+                <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                    android:id="@+id/tv_subtitle"
+                    style="@style/black_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:text="@string/last_revised_december_10_2022" />
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_titledesc"
+                    style="@style/gray_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_subtitle"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:text="@string/dummyreview" />
+
+                <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                    android:id="@+id/tv_firsttitle"
+                    style="@style/black_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_titledesc"
+                    android:text="@string/_1_your_agreement"
+                    android:textAllCaps="true" />
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_firsttitledesc"
+                    style="@style/gray_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_firsttitle"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:text="@string/dummyreview" />
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_descone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_firsttitledesc"
+                    android:text="@string/dummy"
+                    style="@style/gray_10"/>
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_desctwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_descone"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:text="@string/dummy"
+                    style="@style/gray_10"/>
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_descthree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_desctwo"
+                    android:text="@string/dummy"
+                    style="@style/gray_10"/>
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_descfour"
+                    style="@style/gray_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:layout_below="@+id/tv_descthree"
+                    android:text="@string/dummy" />
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_descfive"
+                    style="@style/gray_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_descfour"
+                    android:text="@string/dummy" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_10sdp"
+            android:layout_alignParentBottom="true">
+
+            <com.example.mydesignapp.helper.CustomButton
+                android:id="@+id/btn_accept"
+                style="@style/white_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/rounded_color_linearlayout"
+                android:backgroundTint="@color/blue_app"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/accept" />
+
+            <com.example.mydesignapp.helper.CustomButton
+                android:id="@+id/btn_decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/blue_color_border_rounded"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/decline"
+                android:textColor="@color/blue_app"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

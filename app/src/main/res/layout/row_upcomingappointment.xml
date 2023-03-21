@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.example.mydesignapp.helper.CustomTextViewBold
+        android:id="@+id/tv_upcomingAppointmentdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/black_10"
+        tools:text="20 January 2022"
+        android:layout_marginVertical="@dimen/_12sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_below="@+id/lv_searchbar"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                        android:id="@+id/iv_upcomingAppoinmentDoctorImage"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:scaleType="fitXY"
+                        tools:src="@drawable/doctor_image"
+                        app:siShape="@drawable/shape_rounded_rectangle"
+                        app:siSquare="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <com.example.mydesignapp.helper.CustomTextViewBold
+                        android:id="@+id/tv_upcomingAppointmentDoctorName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Dr. Raymond Martin"
+                        style="@style/black_10"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/location"
+                            android:layout_gravity="center_vertical"
+                            app:tint="@color/blue_dark" />
+
+                        <com.example.mydesignapp.helper.CustomTextViewMedium
+                            android:id="@+id/tv_upcomingAppointmentDoctorAddress"
+                            android:layout_width="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            tools:text="Memorial Drive, MA"
+                            style="@style/gray_9"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_2sdp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:background="@drawable/bg_verticaldottedline"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <com.example.mydesignapp.helper.CustomTextViewBold
+                        android:id="@+id/tv_upcomingAppointmentDoctorTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="6:00"
+                        android:textColor="@color/blue_app"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_gravity="center"/>
+
+                    <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                        android:id="@+id/tv_upcomingAppointmentDoctorTimeDayNight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="PM"
+                        android:gravity="center"
+                        style="@style/gray_10"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

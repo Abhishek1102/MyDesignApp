@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp">
+
+                <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                    android:id="@+id/specialistdoctorimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_90sdp"
+                    android:scaleType="fitXY"
+                    tools:src="@drawable/doctorimage_profile"
+                    app:siShape="@drawable/shape_rounded_rectangle"
+                    app:siSquare="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.example.mydesignapp.helper.CustomTextViewBold
+                        android:id="@+id/tv_doctorname"
+                        style="@style/black_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        tools:text="Dr.Steve Ford" />
+
+                    <ImageView
+                        android:id="@+id/iv_favouritedoctor"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:src="@drawable/favourite_heart"
+                        app:tint="@color/blue_app" />
+                </RelativeLayout>
+
+                <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                    android:id="@+id/tv_doctorspeciality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Cardiologist, MBBS"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    style="@style/gray_9"/>
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_height="wrap_content"
+                    tools:text="25+ Years of experience"
+                    style="@style/gray_8"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iv_star"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@drawable/star"/>
+
+                    <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                        android:id="@+id/tv_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="4.9"
+                        style="@style/black_9"
+                        android:layout_marginHorizontal="@dimen/_4sdp"/>
+                    <com.example.mydesignapp.helper.CustomTextViewMedium
+                        android:id="@+id/tv_ratingnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="(209 reviews)"
+                        style="@style/gray_8"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/location"
+                            app:tint="@color/blue_app" />
+
+                        <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                            android:id="@+id/tv_doctordistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_8ssp"
+                            tools:text="3.2 mi" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/btn_bookappointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    tools:text="Book Appointment"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    style="@style/white_10"
+                    android:background="@drawable/rounded_textview"
+                    android:backgroundTint="@color/blue_app"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

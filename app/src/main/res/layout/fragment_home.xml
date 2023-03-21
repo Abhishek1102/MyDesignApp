@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelayout_specialities"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/lv_topmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_profile"
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_26sdp"
+                        android:src="@drawable/user_icon"
+                        app:civ_border_color="@color/gray"
+                        app:civ_border_width="@dimen/_1sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.example.mydesignapp.helper.CustomTextViewRegular
+                        style="@style/gray_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="@string/current_location" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/placeholder" />
+
+                        <com.example.mydesignapp.helper.CustomTextViewMedium
+                            android:id="@+id/tv_currentlocation"
+                            style="@style/black_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/rajkot_gujarat" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_bell"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:src="@drawable/bell" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_searchbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_topmenu"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/rounded_color_linearlayout"
+                android:padding="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:src="@drawable/search" />
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="Search Doctor"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/_11ssp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_searchbar"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_cardview"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:alpha="0.5"
+                                android:src="@drawable/diseasetwo" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:alpha="0.8"
+                                android:src="@drawable/diseasethree" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_8sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:alpha="0.6"
+                                android:src="@drawable/diseasetwo" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginHorizontal="@dimen/_20sdp"
+                                android:alpha="0.5"
+                                android:src="@drawable/diseasefour" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.example.mydesignapp.helper.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/covid_19_rapid_n_test_at_home"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <com.example.mydesignapp.helper.CustomButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/fully_rounded_button"
+                            android:backgroundTint="@color/blue_app"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingRight="@dimen/_15sdp"
+                            android:text="@string/book_now"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8ssp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/layout_specialitiestitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_main"
+                android:layout_marginHorizontal="@dimen/_16sdp">
+
+                <com.example.mydesignapp.helper.CustomTextViewBold
+                    android:id="@+id/tv_specialities"
+                    style="@style/black_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/explore_specialities"
+                    android:textStyle="bold" />
+
+                <com.example.mydesignapp.helper.CustomTextViewRegular
+                    android:id="@+id/tv_viewall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_all"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/_12ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_allspeciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_specialitiestitle"
+                android:layout_marginVertical="@dimen/_10sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_specialities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="8"
+                    tools:listitem="@layout/row_specilities" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_allspeciality"
+                android:layout_marginHorizontal="@dimen/_16sdp">
+
+                <com.example.mydesignapp.helper.CustomTextViewBold
+                    android:id="@+id/tv_todayappointment"
+                    style="@style/black_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/today_s_appointment"
+                    android:textStyle="bold" />
+
+                <com.example.mydesignapp.helper.CustomTextViewRegular
+                    android:id="@+id/tv_viewappointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_all"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/_12ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_appointment"
+                android:layout_marginVertical="@dimen/_10sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_appointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="8"
+                    tools:listitem="@layout/row_appointment" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_previouslyvisited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_appointment"
+                android:layout_marginHorizontal="@dimen/_16sdp">
+
+                <com.example.mydesignapp.helper.CustomTextViewBold
+                    android:id="@+id/tv_previouslyvisited"
+                    style="@style/black_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/previously_visited"
+                    android:textStyle="bold" />
+
+                <com.example.mydesignapp.helper.CustomTextViewRegular
+                    android:id="@+id/tv_viewpreviouslyvisited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/view_all"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/_12ssp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_previouslyvisited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_previouslyvisited"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_previouslyvisited"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="8"
+                    tools:listitem="@layout/row_previouslyvisiteddoctor" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

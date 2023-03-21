@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragment.ConsultDoctorOnline">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:layout_alignParentTop="true"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/online_doctor" />
+
+        <TextView
+            android:id="@+id/tv_onlinetitle"
+            style="@style/black_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animation_view"
+            android:gravity="center"
+            android:text="Consult Doctor Online"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dummyreview"
+            android:layout_below="@+id/tv_onlinetitle"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:textColor="#888888"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_30sdp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/blue_app"
+                app:cardCornerRadius="@dimen/_16sdp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/white_arrow" />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:id="@+id/fl_appointmentschedule"
+    android:focusable="true"
+    tools:context=".fragment.AppointmentScheduleFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/iv_bookingscheduleBack"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow" />
+
+            <com.example.mydesignapp.helper.CustomTextViewBold
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iv_bookingscheduleBack"
+                android:text="@string/book_appointment"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_top"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                    android:id="@+id/iv_bookingscheduleDoctorimage"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:siShape="@drawable/shape_rounded_rectangle"
+                    app:siSquare="true"
+                    tools:src="@drawable/doctorimage_profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.example.mydesignapp.helper.CustomTextViewBold
+                            android:id="@+id/tv_bookingscheduleDoctorname"
+                            style="@style/black_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            tools:text="Dr. Raymond Martin" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_3sdp"
+                        android:orientation="horizontal">
+
+                        <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                            android:id="@+id/tv_bookingscheduleDoctorspeciality"
+                            style="@style/gray_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Cardiologist, MBBS" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/doctorprofilestar"
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:src="@drawable/star" />
+
+                        <com.example.mydesignapp.helper.CustomTextViewMedium
+                            android:id="@+id/tv_bookingscheduledoctorrating"
+                            style="@style/black_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            tools:text="4.9" />
+
+                        <com.example.mydesignapp.helper.CustomTextViewRegular
+                            android:id="@+id/tv_bookingscheduledoctorreviews"
+                            style="@style/gray_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="(203 reviews)" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_20sdp">
+
+                        <LinearLayout
+                            android:id="@+id/lv_one"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.example.mydesignapp.helper.CustomTextViewMedium
+                                style="@style/black_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/wed" />
+
+                            <com.example.mydesignapp.helper.CustomTextViewMedium
+                                android:id="@+id/tv_one"
+                                style="@style/black_11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/_14_oct" />
+
+                            <View
+                                android:id="@+id/view_one"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/blue_app" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lv_two"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.example.mydesignapp.helper.CustomTextViewMedium
+                                style="@style/black_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/thu" />
+
+                            <com.example.mydesignapp.helper.CustomTextViewMedium
+                                android:id="@+id/tv_two"
+                                style="@style/black_11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="15 Oct" />
+
+                            <View
+                                android:id="@+id/view_two"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/blue_app" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lv_three"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.example.mydesignapp.helper.CustomTextViewMedium
+                                style="@style/black_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/fri" />
+
+                            <com.example.mydesignapp.helper.CustomTextViewMedium
+                                android:id="@+id/tv_three"
+                                style="@style/black_11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/_16_oct" />
+
+                            <View
+                                android:id="@+id/view_three"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/blue_app" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lv_four"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.example.mydesignapp.helper.CustomTextViewMedium
+                                style="@style/black_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/sat" />
+
+                            <com.example.mydesignapp.helper.CustomTextViewMedium
+                                android:id="@+id/tv_four"
+                                style="@style/black_11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/_17_oct" />
+
+                            <View
+                                android:id="@+id/view_four"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/blue_app" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lv_five"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.example.mydesignapp.helper.CustomTextViewMedium
+                                style="@style/black_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/mon" />
+
+                            <com.example.mydesignapp.helper.CustomTextViewMedium
+                                android:id="@+id/tv_five"
+                                style="@style/black_11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/_19_oct" />
+
+                            <View
+                                android:id="@+id/view_five"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/blue_app" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/calendericon"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_gravity="end"
+                                android:focusable="false"
+                                android:src="@drawable/calendar" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                            style="@style/black_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_2sdp"
+                            android:text="@string/morning_slots"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_morningslot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                            style="@style/black_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_2sdp"
+                            android:text="@string/evening_slots"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_eveningslot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lv_continuebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <com.example.mydesignapp.helper.CustomButton
+                            android:id="@+id/btn_continue"
+                            style="@style/white_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/blue_app"
+                            android:background="@drawable/rounded_button"
+                            android:text="@string/continue_word" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

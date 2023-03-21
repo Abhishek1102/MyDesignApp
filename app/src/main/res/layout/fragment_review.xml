@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragment.ReviewFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <RelativeLayout
+
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_reviewBack"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:src="@drawable/left_arrow" />
+
+                <com.example.mydesignapp.helper.CustomTextViewBold
+                    style="@style/black_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:gravity="left"
+                    android:text="@string/write_review"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lv_reviewprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_title"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                    android:id="@+id/iv_reviewDoctorimage"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:scaleType="fitXY"
+                    app:siShape="@drawable/shape_rounded_rectangle"
+                    app:siSquare="true"
+                    tools:src="@drawable/doctorimage_profile" />
+
+
+                <com.example.mydesignapp.helper.CustomTextViewBold
+                    android:id="@+id/tv_reviewdoctorname"
+                    style="@style/black_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    tools:text="Dr. Martha Luther" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_reviewprofile"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/rounded_layout"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <com.example.mydesignapp.helper.CustomTextViewSemiBold
+                        style="@style/black_11"
+                        android:layout_width="@dimen/_240sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_11sdp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="@string/review_question" />
+
+                    <RatingBar
+                        android:id="@+id/ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:numStars="5"
+                        android:progressTint="@color/blue_app" />
+
+                    <com.example.mydesignapp.helper.CustomEdittext
+                        android:id="@+id/edt_review"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:background="@drawable/rounded_button"
+                        android:backgroundTint="@color/gray" />
+
+                    <com.example.mydesignapp.helper.CustomButton
+                        android:id="@+id/btn_reviewsubmit"
+                        style="@style/white_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/rounded_button"
+                        android:backgroundTint="@color/blue_app"
+                        android:text="@string/submit" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

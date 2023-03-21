@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    tools:context=".fragment.ContactUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/iv_contactusback"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow" />
+
+            <com.example.mydesignapp.helper.CustomTextViewBold
+                style="@style/black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/iv_contactusback"
+                android:text="@string/contact_us"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.example.mydesignapp.helper.CustomTextViewBold
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_in_touch"
+            android:textColor="@color/blue_app"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            android:layout_below="@id/rl_top"/>
+
+        <com.example.mydesignapp.helper.CustomTextViewMedium
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="@string/your_name"
+            android:textColor="@color/blue_app"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.example.mydesignapp.helper.CustomEdittext
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/rounded_color_linearlayout"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLength="20"/>
+
+        <com.example.mydesignapp.helper.CustomTextViewMedium
+            android:id="@+id/tv_emailaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_name"
+            android:text="@string/your_email_address"
+            android:textColor="@color/blue_app"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.example.mydesignapp.helper.CustomEdittext
+            android:id="@+id/edt_emailaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_emailaddress"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/rounded_color_linearlayout"
+            android:inputType="textMultiLine"
+            android:lines="2"/>
+
+        <com.example.mydesignapp.helper.CustomTextViewMedium
+            android:id="@+id/tv_issueheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_emailaddress"
+            android:text="You want to talk about"
+            android:textColor="@color/blue_app"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.example.mydesignapp.helper.CustomEdittext
+            android:id="@+id/edt_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_issueheading"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/rounded_color_linearlayout"
+            android:inputType="textMultiLine"
+            android:lines="2"/>
+
+        <com.example.mydesignapp.helper.CustomTextViewMedium
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_issue"
+            android:text="Your message"
+            android:textColor="@color/blue_app"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.example.mydesignapp.helper.CustomEdittext
+            android:id="@+id/edt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_message"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/rounded_color_linearlayout"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10" />
+
+        <com.example.mydesignapp.helper.CustomButton
+            android:id="@+id/btn_sendmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_message"
+            style="@style/white_11"
+            android:layout_below="@+id/edt_message"
+            android:backgroundTint="@color/blue_app"
+            android:background="@drawable/rounded_color_linearlayout"/>
+    </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

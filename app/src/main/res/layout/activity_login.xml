@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_app"
+    tools:context=".activity.LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/login_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_applogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/doctorappicon" />
+
+        <com.example.mydesignapp.helper.CustomTextViewSemiBold
+            android:id="@+id/tv_logo"
+            style="@style/white_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_applogo"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/find_doctor"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_logo"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <!-- don't give margin when using gravity to avoid design misplace-->
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_login"
+                    style="@style/white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_linelogin"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    android:id="@+id/tv_register"
+                    style="@style/white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_lineregister"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@color/white"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_menu"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"
+        android:background="@drawable/rounded_linearlayout"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <com.example.mydesignapp.helper.CustomTextViewMedium
+                    style="@style/black_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_back"
+                    android:textStyle="bold" />
+
+                <com.example.mydesignapp.helper.CustomTextViewRegular
+                    style="@style/gray_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/login_to_continue" />
+
+                <com.example.mydesignapp.helper.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/enter_your_email"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/_11ssp" />
+
+                <com.example.mydesignapp.helper.CustomEdittext
+                    android:id="@+id/edt_loginemail"
+                    style="@style/black_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edittext_box"
+                    android:hint="Enter a number"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_10sdp" />
+
+                <com.example.mydesignapp.helper.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Password"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/_11ssp" />
+
+                <com.example.mydesignapp.helper.CustomEdittext
+                    android:id="@+id/edt_loginpassword"
+                    style="@style/black_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edittext_box"
+                    android:hint="Enter password"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberPassword"
+                    android:padding="@dimen/_10sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <com.example.mydesignapp.helper.CustomButton
+                        android:id="@+id/btn_login"
+                        style="@style/white_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:background="@drawable/rounded_button"
+                        android:backgroundTint="@color/blue_app"
+                        android:text="@string/login"
+                        android:textAllCaps="true" />
+
+                    <com.example.mydesignapp.helper.CustomTextViewMedium
+                        style="@style/black_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/or_login_with"
+                        android:textAlignment="center" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_23sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_fb"
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:src="@drawable/facebook_icon" />
+
+                        <ImageView
+                            android:id="@+id/iv_goggle"
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:src="@drawable/google_icon" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Register Layout -->
+
+    <LinearLayout
+        android:id="@+id/lv_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_menu"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/rounded_linearlayout"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginVertical="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <com.example.mydesignapp.helper.CustomTextViewMedium
+                        style="@style/black_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/welcome"
+                        android:textStyle="bold" />
+
+                    <com.example.mydesignapp.helper.CustomTextViewRegular
+                        style="@style/gray_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/register_to_continue" />
+
+                    <com.example.mydesignapp.helper.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/name"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <com.example.mydesignapp.helper.CustomEdittext
+                        android:id="@+id/edt_registername"
+                        style="@style/black_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edittext_box"
+                        android:hint="enter name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_10sdp" />
+
+                    <com.example.mydesignapp.helper.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/mobile_number"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <com.example.mydesignapp.helper.CustomEdittext
+                        android:id="@+id/edt_registerphonenumber"
+                        style="@style/black_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/edittext_box"
+                        android:hint="enter a number"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:padding="@dimen/_10sdp" />
+
+                    <com.example.mydesignapp.helper.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/email_id"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <com.example.mydesignapp.helper.CustomEdittext
+                        android:id="@+id/edt_registeremailid"
+                        style="@style/black_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edittext_box"
+                        android:hint="enter a email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_10sdp" />
+
+                    <com.example.mydesignapp.helper.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Password"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <com.example.mydesignapp.helper.CustomEdittext
+                        android:id="@+id/edt_registerpassword"
+                        style="@style/black_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edittext_box"
+                        android:hint="enter password"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberPassword"
+                        android:padding="@dimen/_10sdp" />
+
+                    <com.example.mydesignapp.helper.CustomTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/confirm_password"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <com.example.mydesignapp.helper.CustomEdittext
+                        android:id="@+id/edt_registerconfirmpassword"
+                        style="@style/black_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edittext_box"
+                        android:hint="enter confirm password"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberPassword"
+                        android:padding="@dimen/_10sdp" />
+
+                    <com.example.mydesignapp.helper.CustomButton
+                        android:id="@+id/btn_register"
+                        style="@style/white_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/rounded_button"
+                        android:backgroundTint="@color/blue_app"
+                        android:text="Signup"
+                        android:textAllCaps="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

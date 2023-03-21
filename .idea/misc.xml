@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable-v24/fully_rounded_button.xml" value="0.26615384615384613" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable-v24/gradient_button.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable-v24/ic_undraw_booking_re_gw4j.xml" value="0.26615384615384613" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable-v24/rounded_button.xml" value="0.26615384615384613" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/bg_horizontaldottedline.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/bg_verticaldottedline.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/blue_color_border_rounded.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/border_layout_blue_left.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/border_layout_blue_right.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/border_layout_white_left.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/border_layout_white_right.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/circular_progressbar.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/divider_dotted.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/edittext_box.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/fully_rounded_layout.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/gradient_cardview.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/gradient_green.xml" value="0.1425" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/ic_undraw_booking_re_gw4j.xml" value="0.26615384615384613" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/ic_undraw_doctor_kw_5_l.xml" value="0.1425" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/ic_undraw_medicine_b_1_ol.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/layout_border.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/login_gradient.xml" value="0.26615384615384613" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/review_layout_border.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/rounded_color_linearlayout.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/rounded_layout.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/rounded_linearlayout.xml" value="0.26615384615384613" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/rounded_textview.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/row_notification.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/shape_rounded_rectangle.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/shape_toast.xml" value="1.1357142857142857" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/drawable/square_shape_imageview.xml" value="0.2703125" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/activity_swipe_design_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/custom_dialogbox.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/custom_toast.xml" value="0.2" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_all_specialities.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_appointment.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_appointment_schedule.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_book_appointment.xml" value="0.2" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_booking_success.xml" value="0.30142063001853" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_consult_doctor_online.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_contact_us.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_doctor_profile.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_doctor_profile2.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_faq.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_favourites.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_find_doctor.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_heart_disease_specialist.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_login.xml" value="0.1793478260869565" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_more.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_morefragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_my_profile.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_notification.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_order_summary.xml" value="0.2" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_patient_details.xml" value="0.2" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_review.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_settings.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/fragment_termsand_conditions.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_allspecialities.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_appointment.xml" value="0.2911084043848965" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_diseasespecialist.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_doctorprofileabout.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_doctorprofileinfo.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_doctorprofilereview.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_faq.xml" value="0.4" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_favourites.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_notification.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_pastappointment.xml" value="0.35859269282814615" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_previouslyvisiteddoctor.xml" value="0.264" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_specilities.xml" value="0.23007246376811594" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_timeslot.xml" value="0.8" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_upcomingappointment.xml" value="0.3450520833333333" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/layout/row_userreview.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyDesignApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

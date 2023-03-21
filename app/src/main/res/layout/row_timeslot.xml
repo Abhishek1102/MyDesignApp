@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <LinearLayout
+       android:id="@+id/lv_timeslot"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginVertical="@dimen/_8sdp"
+       android:padding="@dimen/_6sdp"
+       android:background="@drawable/rounded_color_linearlayout">
+       <com.example.mydesignapp.helper.CustomTextViewMedium
+           android:id="@+id/tv_timeslot"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           tools:text="09:00 AM"
+           android:textColor="@color/blue_app"
+           android:textSize="@dimen/_10ssp"/>
+   </LinearLayout>
+
+</LinearLayout>

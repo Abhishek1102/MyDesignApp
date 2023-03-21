@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardPreventCornerOverlap="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                        android:id="@+id/iv_userimage"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:scaleType="fitXY"
+                        app:siShape="@drawable/shape_rounded_rectangle"
+                        app:siSquare="true"
+                        tools:src="@drawable/doctor_image" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.example.mydesignapp.helper.CustomTextViewBold
+                        android:id="@+id/tv_username"
+                        style="@style/black_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jey_simmons" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/tv_userratingstar"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/star" />
+
+                        <com.example.mydesignapp.helper.CustomTextViewMedium
+                            android:id="@+id/tv_userrating"
+                            style="@style/black_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            tools:text="4.9" />
+                    </LinearLayout>
+
+                    <com.example.mydesignapp.helper.CustomTextViewRegular
+                        android:id="@+id/tv_userreview"
+                        style="@style/gray_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:maxLines="3"
+                        android:lineSpacingExtra="@dimen/_1sdp"
+                        tools:text="@string/dummyreview" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

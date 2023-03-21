@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_nav" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingTop="@dimen/_5sdp"-->
+<!--        android:id="@+id/lv_menu"-->
+<!--        android:layout_alignParentBottom="true">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/lv_home"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginHorizontal="@dimen/_3sdp"-->
+<!--            android:layout_weight="1">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/_18sdp"-->
+<!--                android:layout_height="@dimen/_20sdp"-->
+<!--                android:src="@drawable/home_icon"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:id="@+id/iv_home"/>-->
+<!--            <com.example.mydesignapp.helper.CustomTextViewMedium-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/home"-->
+<!--                android:textSize="@dimen/_9ssp"-->
+<!--                android:id="@+id/tv_home"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/lv_appointments"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginHorizontal="@dimen/_3sdp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_weight="1">-->
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/_18sdp"-->
+<!--                android:layout_height="@dimen/_20sdp"-->
+<!--                android:id="@+id/iv_appointments"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:src="@drawable/calendar"/>-->
+<!--            <com.example.mydesignapp.helper.CustomTextViewMedium-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/appointments"-->
+<!--                android:id="@+id/tv_appointments"-->
+<!--                android:textSize="@dimen/_9ssp"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginHorizontal="@dimen/_3sdp"-->
+<!--            android:gravity="center"-->
+<!--            android:id="@+id/lv_favourites"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/_18sdp"-->
+<!--                android:layout_height="@dimen/_20sdp"-->
+<!--                android:id="@+id/iv_favourites"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:src="@drawable/heart_icon"/>-->
+<!--            <com.example.mydesignapp.helper.CustomTextViewMedium-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/favourites"-->
+<!--                android:textSize="@dimen/_9ssp"-->
+<!--                android:id="@+id/tv_favourites"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginHorizontal="@dimen/_3sdp"-->
+<!--            android:id="@+id/lv_more"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/_18sdp"-->
+<!--                android:layout_height="@dimen/_20sdp"-->
+<!--                android:id="@+id/iv_more"-->
+<!--                android:padding="@dimen/_2sdp"-->
+<!--                android:src="@drawable/more"/>-->
+<!--            <com.example.mydesignapp.helper.CustomTextViewMedium-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/more"-->
+<!--                android:textSize="@dimen/_9ssp"-->
+<!--                android:id="@+id/tv_more"/>-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:mbn_backgroundBottomColor="#ffffff"
+        app:mbn_countBackgroundColor="#ff6f00"
+        app:mbn_defaultIconColor="#90a4ae"
+        app:mbn_selectedIconColor="@color/blue_app"/>
+
+    <FrameLayout
+        android:id="@+id/fl_full"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
