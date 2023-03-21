@@ -15,7 +15,7 @@ Features
 
 SCREENSHOTS
 
-<img title="Demo" src="https://user-images.githubusercontent.com/71425576/226541833-ebc41acc-86a8-4a0a-9ab2-8c22527b64a9.jpg" width="250" height="500">
+<img src="https://user-images.githubusercontent.com/71425576/226541833-ebc41acc-86a8-4a0a-9ab2-8c22527b64a9.jpg" width="250" height="500">
 <img src="https://user-images.githubusercontent.com/71425576/226543710-d5dfc86a-c1dc-470c-b996-8ef69738aca3.jpg" width="250" height="500">
 <img src="https://user-images.githubusercontent.com/71425576/226543545-d55d7103-87fb-410f-b76f-a969174baf41.jpg" width="250" height="500">
 <img src="https://user-images.githubusercontent.com/71425576/226543552-ccd6c01d-0529-4ec5-b96f-d6a24915ec9e.jpg" width="250" height="500">
