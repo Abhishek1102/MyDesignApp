@@ -1,7 +1,7 @@
 # MyDesignApp
 It's an app that let you search doctor in your area and book appointment with them.
 
-## Features
+## Features:-
 - With App icon
 - Calming design with blue shades
 - use of perfect size and appropriate icons to increase user satisfaction
